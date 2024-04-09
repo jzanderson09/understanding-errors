@@ -1,13 +1,41 @@
 html {
-    font-family: sans-serif;
-  }
-  body {
-    width: 50%;
-    max-width: 800px;
-    min-width: 480px;
-    margin: 0 auto;
-  }
-  .lastResult {
-    color: white;
-    padding: 3px;
-  }
+  box-sizing: border-box;
+  font-family: 'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+}
+
+*,
+**::before,
+**::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 5%;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  width: auto;
+}
+
+.container .game-card {
+  border: 5px solid #000000;
+  border-radius: 10%;
+  box-shadow: 1rem 1rem 1rem 1rem rgb(0, 0, 0);
+  padding: 5%;
+  text-align: center;
+  width: 30%;
+}
+
+.guessSubmit {
+  margin: 3% auto;
+  border-radius: 100px;
+}
+
+.container .resultParas .lastResult {
+  color: white;
+  padding: 3px;
+}
